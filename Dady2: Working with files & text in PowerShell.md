@@ -59,9 +59,16 @@ This searches for "PowerShell" inside the file and returns matching lines.
 
 ## Practice
 Create a folder called TestFolder inside your Documents.
+
 Create a text file inside TestFolder and write some content to it.
+
 Append more text to the file.
+
 Move the file to another folder.
+
 Search for the file with `-Filter` parameter
+
 Search for a specific word inside the file.
+
 Delete the file and the folder after testing.
+
