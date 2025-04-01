@@ -32,6 +32,10 @@
 ``` PowerShell
   Copy-Item -Path "C:\Users\[name]\Documents\firstfile.txt" -Destination "C:\Users\[name]\Documents\newfolder\"
 ```
+Change the name when do copy
+``` PowerShell
+  Copy-Item -Path "C:\Users\[name]\Documents\firstfile.txt" -Destination "C:\Users\[name]\Documents\newfolder\rename.txt"
+```
 - Move a file
 ``` PowerShell
   Move-Item -Path "C:\Users\[name]\Documents\firstfile.txt" -Destination "C:\Users\[name]\Documents\newfolder\"
