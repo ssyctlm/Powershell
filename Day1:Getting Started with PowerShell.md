@@ -6,7 +6,7 @@
    - Run as administrator
 2. PowerShell Version
    ```PowerShell
-  $PSVersionTable
+        $PSVersionTable
    ```
 ## Step 2: Basic Commands
 - **All available commands**
