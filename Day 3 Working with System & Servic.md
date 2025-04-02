@@ -1,4 +1,4 @@
-#Day 3: Working with System & Services in PowerShell
+# Day 3: Working with System & Services in PowerShell
 
 ## Step 1: Managing System Processes
 - View running processes
