@@ -96,7 +96,6 @@ PowerShell automatically detects types, but you can force a specific type.
     $full = $first + $second
     Write-Host $full
 
-  
   ```
 
 ## Practice
@@ -108,6 +107,12 @@ Perform a mathematical operation (addition, multiplication, etc.).
 Create an array of 5 items and print the third item.
 
 Create a hashtable with name, age, and profession, then print the age.
+
+```Powershell
+
+  Write-Host $John['Name'] "is a" $John['Job'] "his ID is" $John['Id']
+
+```
 
 
   
