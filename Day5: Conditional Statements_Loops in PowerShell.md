@@ -50,7 +50,7 @@ As other program languages, PowerShell has conditional statements and loops to e
 
 ```
 - `for` loop
-- 
+
 ```PowerShell
 
   $count = 1
@@ -62,9 +62,39 @@ As other program languages, PowerShell has conditional statements and loops to e
   # Iterate an array
   $arr = @("A","B","C","D","E")
   for($i = 0; $i -lt $arr.Length; $i++){
-    Write-Host "Letter: $(arr[$i])
+    Write-Host "Letter: $($arr[$i])"
   }
 
+```
+- `foreach` Loop (For Arrays)
+```PowerShell
+
+  $fruits = @("Apple", "Banana", "Cherry")
+  
+  foreach ($fruit in $fruits) {
+      Write-Host "Fruit: $fruit"
+  }
 
 ```
-- 
+
+- `do-while` Loop
+```PowerShell
+
+  $index = 1
+
+  do{
+    Write-Host "Number: $index"
+    $index++
+  } while($index -le 5)
+
+```
+
+## Practice
+
+Write an `if` condition to check if a number is even or odd.
+
+Use a `for` loop to print numbers from 1 to 10.
+
+Use a `foreach` loop to print each item from an array of 3 colors.
+
+Use a `while` loop to count down from 5 to 1.
