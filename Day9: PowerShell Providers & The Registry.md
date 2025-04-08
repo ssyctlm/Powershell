@@ -11,7 +11,7 @@ PowerShell providers give a way to interact with different data stores using a f
 | `Function`    | All PowerShell functions in memory       |
 | `Variable`    | All variables currently in your session  |
 
-### 🔍 View All Providers
+### View All Providers
 
 ```powershell
 Get-PSProvider
