@@ -21,7 +21,34 @@ Get-Module -ListAvailable
 
 This lists all modules installed on your system.
 
+- PowerShell Module Types
+
+| ModuleType     | Description |
+|----------------|-------------|
+| `Script`       | A `.psm1` file — contains functions and logic written in PowerShell script. Most user-created modules are this type. |
+| `Manifest`     | A `.psd1` file — contains metadata (like author, version, dependencies). Usually just points to a `.psm1` or binary module. |
+| `Binary`       | A compiled .NET DLL — used for performance or native access. Often written in C#. |
+| `Cim`          | A special type that interacts with CIM/WMI data (less common in modern use). |
+| `Workflow`     | Rare now — was used for running long-running or parallel PowerShell workflows. |
+| `Dynamic`      | Created at runtime by other modules or scripts — doesn't have a static file. |
+
+```powershell
+Get-Module -ListAvailable | Format-Table Name, ModuleType, Version, Path
+```
+
+    - A **Manifest** module (`.psd1`) often **points to a Script or Binary** module.
+    - The **Script module** (`.psm1`) contains the actual code (functions, logic).
+    - **Binary modules** are compiled for speed or complex tasks (e.g., `PSReadLine`).
+    - You usually just import the module name (`Import-Module Az`) and PowerShell handles the rest.
+
+
+
+
+
 ---
+
+
+
 
 ## Install a Module (from PSGallery)
 
