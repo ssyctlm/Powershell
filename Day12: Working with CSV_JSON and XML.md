@@ -1,4 +1,4 @@
-# Day 13: Working with CSV, JSON, and XML in PowerShell
+# Day 12: Working with CSV, JSON, and XML in PowerShell
 
 **CSV**, **JSON**, and **XML** are great for config files, logs, reports, and automation, essential for data exchange and scripting automation.
 
