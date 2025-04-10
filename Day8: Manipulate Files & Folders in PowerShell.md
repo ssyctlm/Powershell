@@ -60,12 +60,21 @@
 
 ```
 
+```powershell
+  Set-Content -Path "C:\Temp\MyFile.txt" -Value "Hello, PowerShell!"
+```
+
 - Append to file
 ```Powershell
 
   "Hello, another line" | Out-File -FilePath "C:\users\name\documents\PSPractice\notes.txt" -append
 
 ```
+```powershell
+  Add-Content -Path "C:\Temp\MyFile.txt" -Value "This is another line."
+```
+
+
 - Read from file
 ```Powershell
 
@@ -94,6 +103,37 @@
   Remove-Item "C:\PSPractice" -Recurse -Force
 
 ```
+
+## Filtering Files
+
+```powershell
+Get-ChildItem -Path "C:\Temp" -Filter "*.txt"
+```
+
+### Recursively search all subfolders:
+
+```powershell
+Get-ChildItem -Path "C:\Temp" -Filter "*.log" -Recurse
+```
+
+---
+
+## Get File/Folder Info
+
+```powershell
+Get-Item "C:\Temp\MyFile.txt" | Select-Object Name, Length, LastWriteTime
+```
+
+Or for folders:
+
+```powershell
+Get-ChildItem -Path "C:\Temp" | Where-Object { $_.PSIsContainer }
+```
+
+---
+
+
+
 
 ## Practice
 
